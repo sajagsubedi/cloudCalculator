@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 max-h-screen">
+<h1 class="text-center text-white font-extrabold my-5 text-4xl">Calculator</h1>
+<div class="container pt-3 border-box rounded-2xl my-10 w-11/12 h-[75vh] md:w-[60vw] md:h-[50vh] mx-auto flex flex-col justify-center ring-4 items-center border border-blue-500 ring-blue-900 bg-slate-900">
+
+<div class="h-[25%] w-11/12  my-2 ">
+<div class="h-full w-full container flex flex-col items-center justify-end text-right text-3xl ring-2 border border-blue-500 ring-blue-900 rounded bg-indigo-50 text-slate-900">
+<div id="screenValue" class="w-full text-4xl sm:text-5xl md:text-6xl flex flex-wrap items-center justify-end h-[72%]">
+0
+</div>
+<div class="w-full h-[28%] md:h-[30%] items-center flex justify-end">
+<button id= "reduce">
+<img height="50px"  class=" w-8  "src="delete.svg">
+</button>
+</div>
+</div>
+</div>
+
+<div id="buttonGroup" class="h-[70%] md:h-[67%] grid gap-3 my-3 mx-1 rounded grid-row-5 w-11/12 py-2 px-2 ring-2 ring-blue-500 border border-blue-900 bg-indigo-300">
+<div class="grid grid-cols-4 gap-3">
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-green-600">(</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-green-600">)</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-2xl justify-center md:text-5xl text-green-600">MOD</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-green-600">÷</button>
+</div>
+
+<div class="grid grid-cols-4 gap-3">
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">7</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">8</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">9</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-green-500">X</button>
+</div>
+
+<div class="grid grid-cols-4 gap-3">
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">4</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">5</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">6</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-green-500">-</button>
+</div>
+
+<div class="grid grid-cols-4 gap-3 ">
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">1</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">2</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">3</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-green-500">+</button>
+</div>
+<div class="grid grid-cols-4 gap-3">
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">0</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">.</button>
+<button class=" bg-slate-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-orange-500">C</button>
+<button class=" bg-green-700 rounded-3xl  flex items-center font-bold text-4xl justify-center md:text-5xl text-white">=</button>
+</div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
